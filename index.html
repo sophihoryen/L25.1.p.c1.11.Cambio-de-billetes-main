@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section id="clienteForm">
+      <h3>Datos del cliente</h3>
+      <input type="text" id="clienteForm_inNombre" placeholder="Nombre"></input>
+      <input type="text" id="clienteForm_inBillete" placeholder="Billete"></input>
+      <input type="text" id="clienteForm_inCambioDe10" placeholder="Cambia de 10"></input>
+      <input type="text" id="clienteForm_inCambioDe20" placeholder="Cambia de 20"></input>
+      <input type="text" id="clienteForm_inCambioDe50" placeholder="Cambia de 50"></input>
+      <button id="clienteForm_btProcesar">Procesar</button> 
+    </section>
+    <section id="mainForm">
+      <h3>Info de la casa de Monedas</h3>
+      <table id="mainForm_tabla">
+        <tr>
+          <th>Nombre</th>
+          <th>Billete</th>
+          <th>Cambia de 10</th>
+          <th>Cambia de 20</th>
+          <th>Cambia de 50</th>
+          <th>Billetes que llevan</th>
+        </tr>
+      </table>
+      <div id="salida"></div>
+    </section>
+  </body>
+    <script type="module">
+      import Cl_principal from "./js/principal.js";
+      new Cl_principal()
+    </script>
+</html>
